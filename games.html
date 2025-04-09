@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Games – LuggageGoblin</title>
-	<link href="style.css" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>My Games - LuggageGoblin</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<h1>My Games</h1>
-		<p><a href="index.html" style="color: #fff;">← Back to home</a></p>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="games.html" class="active">Games</a>
+			<a href="#">3D Prints</a>
+			<a href="#">Contact</a>
+		</nav>
 	</header>
 	<main class="content">
-		
-<div class="card">
-	<h2>Ball Test</h2>
-	<p><a href="https://luggagegoblin.itch.io/ball-test" target="_blank">Play on itch.io</a></p>
-</div>
-<div class="card">
-	<h2>Escape the Light</h2>
-	<p><a href="https://luggagegoblin.itch.io/escape-the-light" target="_blank">Play on itch.io</a></p>
-</div>
-<div class="card">
-	<h2>Endless Arena</h2>
-	<p><a href="https://luggagegoblin.itch.io/endless-arena" target="_blank">Play on itch.io</a></p>
-</div>
-
+		<section class="game-play">
+			<h2>Play Roller Ball Demo</h2>
+			<div class="game-container">
+				<iframe src="games/roller-ball-demo/index.html"
+						width="800"
+						height="600"
+						frameborder="0"
+						allowfullscreen>
+				</iframe>
+			</div>
+		</section>
 	</main>
+	<footer>
+		<p>© 2025 LuggageGoblin. Powered by goblin energy and GitHub Pages.</p>
+	</footer>
 </body>
 </html>
