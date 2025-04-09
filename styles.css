@@ -4,37 +4,59 @@ body {
 	margin: 0;
 	background-color: #f5f5f5;
 	color: #333;
+	line-height: 1.6;
 }
 
+/* Header & Navigation */
 header {
 	background-color: #1a1a1a;
 	color: #aef78e;
 	padding: 1em 2em;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-between;
 }
 
 	header h1 {
 		font-family: 'Changa', sans-serif;
 		margin: 0;
-		font-size: 1.8em;
+		font-size: 2rem;
 	}
 
-nav a {
-	color: #aef78e;
-	text-decoration: none;
-	margin: 0 1em;
-	font-weight: bold;
-	transition: color 0.3s ease;
+/* Navigation links */
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
 }
 
-	nav a:hover,
-	nav a.active {
-		color: #ffffff;
+	nav a {
+		color: #aef78e;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s ease;
 	}
 
-/* Hero Section */
+		nav a:hover,
+		nav a.active {
+			color: #ffffff;
+		}
+
+/* Call-to-Action in Header */
+header p.cta {
+	width: 100%;
+	text-align: center;
+	margin-top: 0.5em;
+	font-size: 1rem;
+}
+
+	header p.cta a {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
+/* Hero / Bio Section */
 .hero {
 	text-align: center;
 	padding: 3em 2em;
@@ -42,16 +64,43 @@ nav a {
 	color: #1a1a1a;
 }
 
+	.hero h2 {
+		font-family: 'Changa', sans-serif;
+		font-size: 2.2rem;
+		margin-bottom: 0.5em;
+	}
+
+	.hero p {
+		font-size: 1.1rem;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+/* Featured Section */
 /* Featured Section */
 .featured {
+	padding: 2em;
+	text-align: center; /* This centers the h2 text */
+}
+
+	.featured h2 {
+		font-family: 'Changa', sans-serif;
+		border-bottom: 2px solid #ccc;
+		padding-bottom: 0.5em;
+		margin-bottom: 1em;
+	}
+
+/* New container for the cards using grid */
+.cards-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 2em;
-	padding: 2em;
 }
 
+
+/* Card Styles */
 .card {
-	background: white;
+	background: #fff;
 	border-radius: 12px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	padding: 1em;
@@ -75,6 +124,7 @@ nav a {
 		font-family: 'Changa', sans-serif;
 	}
 
+	/* Card Links */
 	.card a {
 		display: inline-block;
 		margin-top: 1em;
@@ -91,21 +141,36 @@ nav a {
 			background: #91e97c;
 		}
 
-/* About page specific styles */
-.about-content {
+.games-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2em;
+	padding: 2em;
+}
+
+/* Tools Section */
+.tools {
 	padding: 2em;
 	max-width: 800px;
 	margin: 0 auto;
 }
 
-	.about-content section {
-		margin-bottom: 2em;
-	}
-
-	.about-content h2 {
+	.tools h2 {
 		font-family: 'Changa', sans-serif;
 		border-bottom: 2px solid #ccc;
 		padding-bottom: 0.5em;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	.tools ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.tools li {
+		font-size: 1rem;
+		padding: 0.5em 0;
 	}
 
 /* Footer */
