@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>LuggageGoblin Portfolio</title>
-	<link href="style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuggageGoblin Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h1>LuggageGoblin</h1>
-		<p>Game Developer • Artist • Maker</p>
-	</header>
+  <header class="hero">
+    <h1>LuggageGoblin</h1>
+    <p>Game Developer • Maker • Artist</p>
+  </header>
 
-	<main class="home-content">
-		<section class="intro">
-			<p>Hello! I'm a multidisciplinary creator working with game design, 3D printing, painting, and software tools. Explore my work below:</p>
-		</section>
+  <section class="featured">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/rollerball.jpg" alt="Roller Ball Demo" />
+        <h3>Roller Ball Demo</h3>
+        <p>A physics-based platformer where rolling is the only way forward.</p>
+        <a href="https://luggagegoblin.itch.io/ball-test" target="_blank">Play on itch.io</a>
+      </div>
+      <div class="project-card">
+        <img src="images/pipboy.jpg" alt="3D Printed Pip-Boy 3000" />
+        <h3>Pip-Boy 3000</h3>
+        <p>Fully printed, assembled, and hand-painted replica of the iconic Fallout Pip-Boy.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/software.jpg" alt="Software Tool" />
+        <h3>Pathfinder Spell Tool</h3>
+        <p>A tool for generating spell cards from Pathfinder 2e. Web-ready and fast.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/painting.jpg" alt="Miniature Painting" />
+        <h3>Custom Miniature Painting</h3>
+        <p>Hand-painted figurine with weathering and dry brushing for game-ready immersion.</p>
+      </div>
+    </div>
+  </section>
 
-		<nav class="nav-grid">
-			<a class="nav-card" href="games.html">🎮 Games</a>
-			<a class="nav-card" href="prints.html">🧱 3D Prints</a>
-			<a class="nav-card" href="paintings.html">🎨 Paintings</a>
-			<a class="nav-card" href="software.html">🧰 Software Projects</a>
-		</nav>
-	</main>
+  <footer>
+    <p>© 2025 LuggageGoblin • <a href="https://github.com/LuggageGoblin" target="_blank">GitHub</a> • <a href="https://luggagegoblin.itch.io" target="_blank">Itch.io</a></p>
+  </footer>
 </body>
 </html>
