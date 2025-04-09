@@ -1,4 +1,4 @@
-
+/* General styles */
 body {
 	font-family: 'Rubik', sans-serif;
 	margin: 0;
@@ -15,11 +15,11 @@ header {
 	align-items: center;
 }
 
-header h1 {
-	font-family: 'Changa', sans-serif;
-	margin: 0;
-	font-size: 1.8em;
-}
+	header h1 {
+		font-family: 'Changa', sans-serif;
+		margin: 0;
+		font-size: 1.8em;
+	}
 
 nav a {
 	color: #aef78e;
@@ -29,10 +29,12 @@ nav a {
 	transition: color 0.3s ease;
 }
 
-nav a:hover {
-	color: #ffffff;
-}
+	nav a:hover,
+	nav a.active {
+		color: #ffffff;
+	}
 
+/* Hero Section */
 .hero {
 	text-align: center;
 	padding: 3em 2em;
@@ -40,11 +42,7 @@ nav a:hover {
 	color: #1a1a1a;
 }
 
-.hero h2 {
-	font-size: 2em;
-	margin-bottom: 0.5em;
-}
-
+/* Featured Section */
 .featured {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -61,38 +59,56 @@ nav a:hover {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+	.card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.card img {
+		width: 100%;
+		border-radius: 8px;
+		margin-bottom: 1em;
+	}
+
+	.card h3 {
+		margin: 0.5em 0;
+		font-family: 'Changa', sans-serif;
+	}
+
+	.card a {
+		display: inline-block;
+		margin-top: 1em;
+		padding: 0.5em 1em;
+		background: #aef78e;
+		color: #1a1a1a;
+		text-decoration: none;
+		border-radius: 6px;
+		font-weight: bold;
+		transition: background 0.3s ease;
+	}
+
+		.card a:hover {
+			background: #91e97c;
+		}
+
+/* About page specific styles */
+.about-content {
+	padding: 2em;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
-.card img {
-	width: 100%;
-	border-radius: 8px;
-	margin-bottom: 1em;
-}
+	.about-content section {
+		margin-bottom: 2em;
+	}
 
-.card h3 {
-	margin: 0.5em 0;
-	font-family: 'Changa', sans-serif;
-}
+	.about-content h2 {
+		font-family: 'Changa', sans-serif;
+		border-bottom: 2px solid #ccc;
+		padding-bottom: 0.5em;
+	}
 
-.card a {
-	display: inline-block;
-	margin-top: 1em;
-	padding: 0.5em 1em;
-	background: #aef78e;
-	color: #1a1a1a;
-	text-decoration: none;
-	border-radius: 6px;
-	font-weight: bold;
-	transition: background 0.3s ease;
-}
-
-.card a:hover {
-	background: #91e97c;
-}
-
+/* Footer */
 footer {
 	text-align: center;
 	padding: 2em;
