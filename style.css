@@ -1,77 +1,60 @@
-﻿body {
-    font-family: system-ui, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f7f7f7;
-    color: #333;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+	background: #f9f9f9;
+	color: #222;
 }
 
 header {
-    background: #222;
-    color: #fff;
-    padding: 2em 1em;
-    text-align: center;
+	text-align: center;
+	padding: 2rem;
+	background: #333;
+	color: #fff;
 }
 
-.section {
-    padding: 2em 1em;
-    max-width: 800px;
-    margin: 0 auto;
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
 }
 
-h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 0.3em;
+.nav-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+	padding: 2rem;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.nav-card {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	padding: 2rem;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #333;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+main.content, main.home-content {
+	padding: 2rem;
+	max-width: 900px;
+	margin: auto;
 }
 
 .card {
-    display: flex;
-    background: #fff;
-    margin-bottom: 1em;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-    .card img {
-        width: 150px;
-        object-fit: cover;
-    }
-
-.card-text {
-    padding: 1em;
-}
-
-    .card-text h3 {
-        margin-top: 0;
-    }
-
-    .card-text a {
-        text-decoration: none;
-        color: #007acc;
-    }
-
-        .card-text a:hover {
-            text-decoration: underline;
-        }
-
-.gallery {
-    display: flex;
-    gap: 1em;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-    .gallery img {
-        width: 200px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
+	background: #fff;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
