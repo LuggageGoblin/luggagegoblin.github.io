@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Arena | LuggageGoblin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>LuggageGoblin</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html" class="active">Games</a>
+            <a href="prints.html">3D Prints</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Endless Arena</h2>
+        <p>Face off against endless waves of enemies in this top-down survival shooter with responsive controls and a clean arcade loop.</p>
+    </section>
+
+    <main class="game-loader">
+        <div id="endless-container" class="game-placeholder">
+            <button id="load-endless" class="play-button">▶ Play Game</button>
+        </div>
+    </main>
+
+    <footer>
+        <p class="cta">
+            Contact me at <a href="mailto:theodore.farland@gmail.com">theodore.farland@gmail.com</a>
+        </p>
+        <p>© 2025 Theodore Farland (Luggage Goblin). All rights reserved.</p>
+    </footer>
+
+    <script>document.getElementById('load-endless').addEventListener('click', function () {
+			const container = document.getElementById('endless-container');
+			container.innerHTML = `<iframe src="games/endless-arena/index.html" width="1152" height="648" frameborder="0" allowfullscreen></iframe>`;
+		});</script>
+</body>
+</html>
