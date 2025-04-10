@@ -276,3 +276,47 @@ footer {
 	color: #444;
 	text-align: center;
 }
+.game-frame-wrapper {
+	padding: 2em;
+	display: flex;
+	justify-content: center;
+	overflow-x: auto;
+}
+
+	.game-frame-wrapper iframe {
+		border: 2px solid #ccc;
+		border-radius: 8px;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+	}
+.game-loader {
+	display: flex;
+	justify-content: center;
+	padding: 2em;
+}
+
+.game-placeholder {
+	width: 960px;
+	height: 600px;
+	border: 2px dashed #ccc;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f0f0f0;
+}
+
+.play-button {
+	padding: 1em 2em;
+	font-size: 1.2rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+	background-color: #aef78e;
+	color: #1a1a1a;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+	.play-button:hover {
+		background-color: #91e97c;
+	}

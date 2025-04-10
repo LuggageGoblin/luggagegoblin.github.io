@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roller Ball Demo | LuggageGoblin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>LuggageGoblin</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html" class="active">Games</a>
+            <a href="prints.html">3D Prints</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Roller Ball Demo</h2>
+        <p>A physics-driven game prototype where classic platforming meets responsive controls.</p>
+    </section>
+
+    <main class="game-loader">
+        <div id="game-container" class="game-placeholder">
+            <button id="load-game" class="play-button">▶ Play Game</button>
+        </div>
+    </main>
+
+    <footer>
+        <p class="cta">
+            Contact me at <a href="mailto:theodore.farland@gmail.com">theodore.farland@gmail.com</a>
+        </p>
+        <p>© 2025 Theodore Farland (Luggage Goblin). All rights reserved.</p>
+    </footer>
+
+    <script>document.getElementById('load-game').addEventListener('click', function () {
+			const container = document.getElementById('game-container');
+			container.innerHTML = `<iframe src="games/roller-ball-demo/index.html" width="1152" height="648" frameborder="0" allowfullscreen></iframe>`;
+		});</script>    
+</body>
+</html>
