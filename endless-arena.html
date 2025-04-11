@@ -19,17 +19,50 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Endless Arena</h2>
-        <p>Face off against endless waves of enemies in this top-down survival shooter with responsive controls and a clean arcade loop.</p>
-    </section>
+    <main class="game-page">
+        <!-- Game Title -->
+        <section class="game-title">
+            <h2>Endless Arena</h2>
+        </section>
 
-    <main class="game-loader">
-        <div id="endless-container" class="game-placeholder">
-            <button id="load-endless" class="play-button">▶ Play Game</button>
-        </div>
+        <!-- Game Container with Play Button -->
+        <section class="game-container">
+            <div id="game-placeholder" class="game-box">
+                <button id="load-game" class="play-button">▶ Play Game</button>
+            </div>
+        </section>
+
+        <!-- Text Content: Description, Controls, Additional Settings, Note -->
+        <section class="text-content">
+            <div class="info-box">
+                <h3>About the Game</h3>
+                <p>
+                    <strong>Endless Arena</strong> is a simple little survival game where the player has to survive hoards of enemies.
+                </p>
+
+            </div>
+
+            <div class="info-box">
+                <h3>Controls</h3>
+                <ul>
+                    <li><strong>Move:</strong> WASD / Left Analog</li>
+                    <li><strong>Dash:</strong> Space / A or X</li>
+                    <li><strong>Attack:</strong>Arrow Keys / Right Analog</li>
+                    <li><strong>Swap Attack:</strong> Q & E / R1 & L1 or Left and Right Bumpers</li>
+                    <li><strong>Pause:</strong>P & Escape / Start</li>
+                    <li><strong>Shop:</strong>Mouse</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="external-links">
+            <h3>Play on itch.io</h3>
+            <p>You can also play this game on <a href="https://luggagegoblin.itch.io/escape-the-light" target="_blank">itch.io</a>.</p>
+        </section>
     </main>
 
+    https://luggagegoblin.itch.io/endless-arena
     <footer>
         <p class="cta">
             Contact me at <a href="mailto:theodore.farland@gmail.com">theodore.farland@gmail.com</a>
@@ -37,9 +70,10 @@
         <p>© 2025 Theodore Farland (Luggage Goblin). All rights reserved.</p>
     </footer>
 
-    <script>document.getElementById('load-endless').addEventListener('click', function () {
-			const container = document.getElementById('endless-container');
-			container.innerHTML = `<iframe src="games/endless-arena/index.html" width="1280" height="720" frameborder="0" allowfullscreen></iframe>`;
-		});</script>
+    <script>
+        document.getElementById('load-endless').addEventListener('click', function () {
+            const container = document.getElementById('endless-container');
+            container.innerHTML = `<iframe src="games/endless-arena/index.html" width="1280" height="720" frameborder="0" allowfullscreen></iframe>`;
+        });</script>
 </body>
 </html>

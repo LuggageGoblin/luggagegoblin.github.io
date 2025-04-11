@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escape the Light | LuggageGoblin</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,15 +19,58 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Escape the Light</h2>
-        <p>A short atmospheric horror experience where the light is your enemy. Can you find your way out before it finds you?</p>
-    </section>
+    <main class="game-page">
+        <!-- Game Title -->
+        <section class="game-title">
+            <h2>Escape The Light</h2>
+        </section>
 
-    <main class="game-loader">
-        <div id="escape-container" class="game-placeholder">
-            <button id="load-escape" class="play-button">▶ Play Game</button>
-        </div>
+        <!-- Game Container with Play Button -->
+        <section class="game-container">
+            <div id="game-placeholder" class="game-box">
+                <button id="load-game" class="play-button">▶ Play Game</button>
+            </div>
+        </section>
+
+        <!-- Text Content: Description, Controls, Additional Settings, Note -->
+        <section class="text-content">
+            <div class="info-box">
+                <h3>About the Game</h3>
+                <p>
+                    <strong>Escape the Light</strong> is a stealth / puzzle game where you play as a shadow that uses alchemy abilities to avoid being extinguished by the Light Prisms.
+                </p>
+
+            </div>
+
+            <div class="info-box">
+                <h3>Controls</h3>
+                <ul>
+                    <li><strong>Move:</strong> WASD / Left Analog</li>
+                    <li><strong>Confirm:</strong> Space / A or X</li>
+                    <li><strong>Abilities:</strong> 1,2,3,4 or Arrow Keys / D-pad</li>
+                    <li><strong>Rotate Wall:</strong> Q & E / R1 & L1 or Left and Right Bumpers</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Info</h3>
+                <ul>
+                    <li><strong>GDD:</strong> <a href="https://docs.google.com/document/d/1If-KCIJQhI5_4HrAO57tlz3wlyi6VF5OPyfxwgfPhOY/edit?usp=sharing"target="_blank">Google Docs Design Document</a></li>
+                    <li><strong>Music:</strong> By Kevin Macleod</li>
+                    <li>Come Play with Me</li>
+                    <li>Echos of Time</li>
+                    <li>Heartbreaking</li>
+                    <li>Sovereign</li>
+                    <li><strong>Licensed under Creative Commons:</strong>By Attribution 3.0 License</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="external-links">
+            <h3>Play on itch.io</h3>
+            <p>You can also play this game on <a href="https://luggagegoblin.itch.io/escape-the-light" target="_blank">itch.io</a>.</p>
+        </section>
     </main>
 
     <footer>
@@ -37,9 +80,10 @@
         <p>© 2025 Theodore Farland (Luggage Goblin). All rights reserved.</p>
     </footer>
 
-    <script>document.getElementById('load-escape').addEventListener('click', function () {
-			const container = document.getElementById('escape-container');
-			container.innerHTML = `<iframe src="games/escape-the-light/index.html" width="1152" height="648" frameborder="0" allowfullscreen></iframe>`;
-		});</script>
+    <script>
+    document.getElementById('load-escape').addEventListener('click', function () {
+            const container = document.getElementById('escape-container');
+            container.innerHTML = `<iframe src="games/escape-the-light/index.html" width="1152" height="648" frameborder="0" allowfullscreen></iframe>`;
+        });</script>
 </body>
 </html>

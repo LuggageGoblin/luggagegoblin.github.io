@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roller Ball Demo | LuggageGoblin</title>
+    <title>Roller Ball | LuggageGoblin</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Rubik&display=swap" rel="stylesheet">
 </head>
@@ -19,27 +19,86 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Roller Ball Demo</h2>
-        <p>A physics-driven game prototype where classic platforming meets responsive controls.</p>
-    </section>
+    <main class="game-page">
+        <!-- Game Title -->
+        <section class="game-title">
+            <h2>Roller Ball Demo</h2>
+        </section>
 
-    <main class="game-loader">
-        <div id="game-container" class="game-placeholder">
-            <button id="load-game" class="play-button">▶ Play Game</button>
-        </div>
+        <!-- Game Container with Play Button -->
+        <section class="game-container">
+            <div id="game-placeholder" class="game-box">
+                <button id="load-game" class="play-button">▶ Play Game</button>
+            </div>
+        </section>
+
+        <!-- Text Content: Description, Controls, Additional Settings, Note -->
+        <section class="text-content">
+            <div class="info-box">
+                <h3>About the Game</h3>
+                <p>
+                    <strong>Roller Ball: Demo</strong> is a simple rolling ball game where the objective is to reach each level's goal. This demo is currently intended for testing purposes.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>Controls</h3>
+                <ul>
+                    <li><strong>Move:</strong> Left analog stick / WASD / Arrow keys</li>
+                    <li><strong>Reset:</strong> A / R</li>
+                    <li><strong>High Scores:</strong> Select / F</li>
+                    <li><strong>Pause:</strong> Start / Spacebar / Escape</li>
+                    <li><strong>Fire:</strong> Y / E</li>
+                    <li><strong>Absorbent:</strong> X / C</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Additional Settings</h3>
+                <ul>
+                    <li><strong>Save Settings:</strong> Saves all settings across or on resetting levels.</li>
+                    <li><strong>Challenge Mode:</strong> Changes controls from perspective-based movement to orthogonal-based movement.</li>
+                    <li><strong>Diagonal:</strong> An experimental movement setting that makes diagonal movement faster than forward movement.</li>
+                    <li><strong>Test Settings:</strong> Displays sliders for testing different values that impact movement.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Test Slider Definitions</h3>
+                <ul>
+                    <li><strong>Grounded Lerp Weight:</strong> The rate at which the bounce/velocity damping approaches the grounded bound while the ball is on the ground.</li>
+                    <li><strong>In Air Lerp Weight:</strong> The rate at which the bounce/velocity damping approaches the in-air bound while the ball is in the air.</li>
+                    <li><strong>Grounded Bounce Bound:</strong> The lower bound for the ball's bounce property.</li>
+                    <li><strong>Grounded L-Damp Bound:</strong> The lower bound for the ball's velocity damping property.</li>
+                    <li><strong>In Air Bounce Bound:</strong> The upper bound for the ball's bounce property.</li>
+                    <li><strong>In Air L-Damp Bound:</strong> The upper bound for the ball's velocity damping property.</li>
+                    <li><strong>Bounce:</strong> Indicates how bouncy the ball is.</li>
+                    <li><strong>L-Damp:</strong> Indicates how quickly the ball slows down due to environmental factors, similar to air resistance.</li>
+                    <li><strong>Mass:</strong> The mass of the ball.</li>
+                    <li><strong>Speed:</strong> The force the ball uses to roll.</li>
+                    <li><strong>Gravity:</strong> The force that pulls the ball down.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="external-links">
+            <h3>Play on itch.io</h3>
+            <p>You can also play this game on <a href="https://luggagegoblin.itch.io/ball-test" target="_blank">itch.io</a>.</p>
+        </section>
     </main>
 
     <footer>
         <p class="cta">
             Contact me at <a href="mailto:theodore.farland@gmail.com">theodore.farland@gmail.com</a>
         </p>
-        <p>© 2025 Theodore Farland (Luggage Goblin). All rights reserved.</p>
+        <p>© 2025 Theodore Farland (LuggageGoblin). All rights reserved.</p>
     </footer>
 
-    <script>document.getElementById('load-game').addEventListener('click', function () {
-			const container = document.getElementById('game-container');
-			container.innerHTML = `<iframe src="games/roller-ball-demo/index.html" width="1152" height="648" frameborder="0" allowfullscreen></iframe>`;
-		});</script>    
+    <script>
+        document.getElementById('load-game').addEventListener('click', function () {
+            const container = document.getElementById('game-placeholder');
+            container.innerHTML = `<iframe src="games/roller-ball-demo/index.html" width="1152" height="648" allowfullscreen></iframe>`;
+        });
+    </script>
 </body>
 </html>
